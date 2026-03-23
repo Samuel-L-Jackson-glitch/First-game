@@ -1,0 +1,5 @@
+{
+  "name": "Path Connect Puzzle",
+  "description": "A minimalist path-drawing puzzle game where you connect colored dots without crossing lines.",
+  "requestFramePermissions": []
+}
