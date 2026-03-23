@@ -4,6 +4,7 @@ import { COLORS, LEVELS, QUOTES } from '../constants';
 import { Color, Point, Level, Difficulty } from '../types';
 import { Trophy, RotateCcw, ChevronLeft, ChevronRight, Play, Grid, X, Volume2, VolumeX, BarChart } from 'lucide-react';
 import { soundManager } from '../lib/soundManager';
+import AdBanner from './AdBanner';
 
 const PathConnect = () => {
   const [levelIdx, setLevelIdx] = useState(0);
@@ -558,6 +559,11 @@ const PathConnect = () => {
                     </p>
                   )}
                 </div>
+
+                {/* Ad in Win Screen */}
+                <div className="mt-8 w-full px-8">
+                  <AdBanner adUnitId="ca-app-pub-6824744627297894/9947814497" className="border-zinc-800 bg-zinc-900/30" />
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
@@ -618,6 +624,9 @@ const PathConnect = () => {
             )}
           </AnimatePresence>
         </div>
+
+        {/* Ad Banner */}
+        <AdBanner adUnitId="ca-app-pub-6824744627297894/9947814497" />
 
         {/* Footer Navigation */}
         <div className="flex justify-between items-center px-2">
